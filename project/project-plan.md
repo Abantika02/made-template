@@ -6,9 +6,10 @@ Analysis of Shooting Incidents
 ## Main Question
 
 <!-- Think about one main question you want to answer based on the data. -->
-1. What are the trends in shooting incidents across different locations and times?
-2. How do factors like time, day, or location influence the frequency of shootings?
-3. Can we identify hotspots or predict shooting occurrences based on historical data?
+1. What are the spatial and temporal patterns of shooting incidents, and can these trends help identify high-risk areas and times for potential future incidents?
+2. What are the trends in shooting incidents across different locations and times?
+3. How do factors like time, day, or location influence the frequency of shootings?
+4. Can we identify hotspots or predict shooting occurrences based on historical data?
 
 
 ## Description
