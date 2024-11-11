@@ -46,7 +46,7 @@ attributes include:
 - **Time**: Specific time when the incident occurred, useful for temporal analysis
 - **Victims/Perpetrators**: Information on those involved, if available
 
-### Datasource2: Weather Dataset (United States)
+### Datasource2: Kaggle Weather Dataset (United States)
 * Data URL: https://www.kaggle.com/datasets/nachiketkamod/weather-dataset-us/data?select=Weather-Data-(US).csv
 * Data Type: CSV
 
