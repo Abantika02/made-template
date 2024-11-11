@@ -12,6 +12,7 @@ Analysis of Shooting Incidents
 2. What are the trends in shooting incidents across different locations and times?
 3. How do factors like time, day, or location influence the frequency of shootings?
 4. Can we identify hotspots or predict shooting occurrences based on historical data?
+5. How do weather conditions (such as temperature, humidity, and precipitation) correlate with the frequency and distribution of shooting incidents across different locations and times, and can certain weather patterns be linked to higher shooting occurrences?
 
 
 ## Description
@@ -44,6 +45,18 @@ attributes include:
 - **Location**: Geographic location of the shooting (e.g., city, neighborhood)
 - **Time**: Specific time when the incident occurred, useful for temporal analysis
 - **Victims/Perpetrators**: Information on those involved, if available
+
+### Datasource2: Weather Dataset (United States)
+* Data URL: https://www.kaggle.com/datasets/nachiketkamod/weather-dataset-us/data?select=Weather-Data-(US).csv
+* Data Type: CSV
+
+This dataset contains records of weather conditions across various U.S. locations. By adding context to shooting incident data, it enables analysis of whether certain weather patterns correlate with the frequency and severity of shootings. Key attributes include:
+
+- **Date**: Date of the weather observation, allowing integration with incident data.
+- **Location**: Geographic location of the weather observation (e.g., city, neighborhood).
+- **Temperature** : Temperature data, potentially impacting incident frequency.
+- **Precipitation and Humidity**: Environmental conditions that may correlate with shooting incidents.
+- **Weather Conditions**: Descriptions of weather (e.g., sunny, rainy) that can be analyzed for any patterns related to incident occurrences.
 
 
 ## Work Packages
