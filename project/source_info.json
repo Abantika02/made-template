@@ -1,0 +1,8 @@
+{
+    "data_dir": "/Users/LENOVO1/made-template/data", 
+    "datasets": [
+      "ahsen1330/us-police-shootings", 
+      "nachiketkamod/weather-dataset-us"
+    ]
+  }
+  
