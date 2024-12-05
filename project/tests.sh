@@ -1,17 +1,17 @@
 #!/bin/bash
 # Script Name: tests.sh
 # Description: This script performs automated tests to ensure the integrity and validity of the data pipeline outputs for the project. It checks for the existence of required output files and validates data within the database.
-# Usage: Run this script from the project root directory with 'bash tests.sh'.
+# Usage: Run this script from the project root directory with 'bash project/tests.sh'.
 # Prerequisites: Python 3.12.0, SQLite3 installed.
 
 # Set paths for input data and output database
-DB_FILE="/Users/LENOVO1/made-template/data/processed_data.db"
-CSV_SHOOTING_INPUT="/Users/LENOVO1/made-template/data/shootings.csv"
-CSV_WEATHER_INPUT="/Users/LENOVO1/made-template/data/Weather Data (US).csv"
+DB_FILE="data/processed_data.db"
+CSV_SHOOTING_INPUT="data/shootings.csv"
+CSV_WEATHER_INPUT="data/Weather Data (US).csv"
 
 # Run the pipeline
 echo "Loading and executing pipeline.py"
-python pipeline.py
+python project/pipeline.py
 
 # Validate the pipeline execution success
 if [ $? -ne 0 ]; then
