@@ -124,7 +124,7 @@ class DataPipeline:
 
     def run_pipeline(self) -> None:
         """Runs the whole ETL pipeline."""
-        json_path = "/Users/LENOVO1/made-template/project/source_info.json"
+        json_path = "project/source_info.json"
 
         # Check if the JSON file exists in the current directory
         if not os.path.exists(json_path):
