@@ -161,7 +161,7 @@ if __name__ == "__main__":
     # Initialize services
     extractor = DataExtractor(source_info)
     transformer = DataTransformer(extractor.extracted_data)
-    loader = DataLoader(transformer.transformed_data, '/Users/LENOVO1/made-template/data/processed_data.db')
+    loader = DataLoader(transformer.transformed_data, 'data/processed_data.db')
 
     # Run the pipeline
     pipeline = DataPipeline(helper_service, extractor, transformer, loader)
