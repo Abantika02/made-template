@@ -19,9 +19,9 @@ jobs:
         python-version: '3.12.0'
       
     - name: Check versions
-    run: |
-      python --version
-      sqlite3 --version
+      run: |
+        python --version
+        sqlite3 --version
 
     
     - name: Install Dependencies
