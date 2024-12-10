@@ -151,7 +151,7 @@ if __name__ == "__main__":
     
     # Define your source info in the JSON file for dataset URLs
     source_info = {
-        "data_dir": "/Users/LENOVO1/made-template/data", 
+        "data_dir": "data", 
         "datasets": [
             "ahsen1330/us-police-shootings", 
             "nachiketkamod/weather-dataset-us"
