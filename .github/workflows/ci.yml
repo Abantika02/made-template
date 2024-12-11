@@ -23,6 +23,14 @@ jobs:
         python --version
         sqlite3 --version
 
+    - name: Display Environment Info
+      run: |
+        echo "Python Version:"
+        python --version
+        echo "SQLite Version:"
+        sqlite3 --version
+        echo "List Files in Data Directory:"
+        ls -l path/to/data/
     
     - name: Install Dependencies
       run: |
