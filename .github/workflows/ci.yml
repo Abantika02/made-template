@@ -30,7 +30,7 @@ jobs:
         echo "SQLite Version:"
         sqlite3 --version
         echo "List Files in Data Directory:"
-        ls -l path/to/data/
+        ls -l data/
     
     - name: Install Dependencies
       run: |
