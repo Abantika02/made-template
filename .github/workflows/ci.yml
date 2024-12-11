@@ -27,7 +27,6 @@ jobs:
       run: |
         echo "Python Version:"
         python --version
-        pandas --version
         echo "SQLite Version:"
         sqlite3 --version
         echo "List Files in Data Directory:"
@@ -36,6 +35,7 @@ jobs:
     - name: Install Dependencies
       run: |
         python3 -m pip install --upgrade pip
+        pip install --upgrade pandas
         pip install -r requirements.txt
 
     - name: Run Tests

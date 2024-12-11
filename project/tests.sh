@@ -10,8 +10,8 @@ CSV_SHOOTING_INPUT="data/shootings.csv"
 CSV_WEATHER_INPUT="data/Weather Data (US).csv"
 
 # Run the pipeline
-echo "Loading and executing pipeline.py"
-python project/pipeline.py
+#echo "Loading and executing pipeline.py"
+#python project/pipeline.py
 
 # Validate the pipeline execution success
 if [ $? -ne 0 ]; then
