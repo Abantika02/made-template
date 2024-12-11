@@ -56,8 +56,8 @@ class DataTransformer:
             ]
 
             # Optionally handle nulls here if not already done
-            filtered_data['TMAX'].fillna(weather_data_filtered['TMAX'].median(), inplace=True)
-            filtered_data['TMIN'].fillna(weather_data_filtered['TMIN'].median(), inplace=True)
+            weather_data_filtered['TMAX'].fillna(weather_data_filtered['TMAX'].median(), inplace=True)
+            weather_data_filtered['TMIN'].fillna(weather_data_filtered['TMIN'].median(), inplace=True)
 
             # Store the transformed data
             self.transformed_data['weather_2015_2020'] = weather_data_filtered
