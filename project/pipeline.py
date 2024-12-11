@@ -55,6 +55,10 @@ class DataTransformer:
                 (weather_data['DATE'].dt.year >= 2015) & (weather_data['DATE'].dt.year <= 2020)
             ]
 
+            # Optionally handle nulls here if not already done
+            filtered_data['TMAX'].fillna(weather_data_filtered['TMAX'].median(), inplace=True)
+            filtered_data['TMIN'].fillna(weather_data_filtered['TMIN'].median(), inplace=True)
+
             # Store the transformed data
             self.transformed_data['weather_2015_2020'] = weather_data_filtered
 
@@ -71,6 +75,7 @@ class DataLoader:
     def __init__(self, transformed_data: dict, db_path: str):
         self.transformed_data = transformed_data
         self.db_path = db_path
+        self.data_dir = data_dir
 
     def load(self) -> None:
         """Loads the transformed data into an SQLite database."""
@@ -92,6 +97,16 @@ class DataLoader:
             print("Data loaded successfully!")
         except sqlite3.Error as e:
             print(f"Error occurred while loading data into the database: {e}")
+        
+
+        def save_to_csv(self):
+        """Saves the transformed data into CSV files."""
+        for table_name, data in self.transformed_data.items():
+            csv_path = os.path.join(self.data_dir, f"{table_name}.csv")
+            print(f"Saving {table_name} to CSV at {csv_path}...")
+            data.to_csv(csv_path, index=False)
+            print(f"{table_name} saved to CSV successfully!")
+
 
 
 
@@ -142,6 +157,9 @@ class DataPipeline:
 
         # Load Data
         self.on_load(transformed_data)
+
+        # Save transformed data to CSV files
+        self.loader.save_to_csv()
 
 
 
