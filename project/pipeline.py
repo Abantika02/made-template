@@ -72,7 +72,7 @@ class DataTransformer:
 
 class DataLoader:
     """A service for loading transformed data into an SQLite database."""
-    def __init__(self, transformed_data: dict, db_path: str):
+    def __init__(self, transformed_data: dict, db_path: str, data_dir: str):
         self.transformed_data = transformed_data
         self.db_path = db_path
         self.data_dir = data_dir
