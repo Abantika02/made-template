@@ -87,7 +87,7 @@ echo "Verifying data integrity and date range in the 'weather_2015_2020' table..
 TMAX_CHECK=$(sqlite3 "$DB_FILE" "SELECT COUNT(*) FROM weather_2015_2020 WHERE TMAX IS NULL;")
 TMIN_CHECK=$(sqlite3 "$DB_FILE" "SELECT COUNT(*) FROM weather_2015_2020 WHERE TMIN IS NULL;")
 if [[ "$TMAX_CHECK" -eq 0 && "$TMIN_CHECK" -eq 0 ]]; then
-    echo "Data integrity check passed: No unexpected NULL values in TMAX or TMIN and all dates are within 2015-2020."
+    echo "Data integrity check passed: No unexpected NULL values in TMAX or TMIN."
 else
     echo "Data integrity check failed: Found $TMAX_CHECK unexpected NULL values in TMAX, $TMIN_CHECK unexpected NULL values in TMIN."
     exit 1
