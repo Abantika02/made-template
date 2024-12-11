@@ -99,7 +99,7 @@ class DataLoader:
             print(f"Error occurred while loading data into the database: {e}")
         
 
-        def save_to_csv(self):
+    def save_to_csv(self):
         """Saves the transformed data into CSV files."""
         for table_name, data in self.transformed_data.items():
             csv_path = os.path.join(self.data_dir, f"{table_name}.csv")
