@@ -27,6 +27,7 @@ jobs:
       run: |
         echo "Python Version:"
         python --version
+        pandas --version
         echo "SQLite Version:"
         sqlite3 --version
         echo "List Files in Data Directory:"

@@ -50,14 +50,14 @@ class DataTransformer:
             # Convert the DATE column to datetime format (coerce invalid dates)
             weather_data['DATE'] = pd.to_datetime(weather_data['DATE'], errors='coerce')
 
+            # Optionally handle nulls here if not already done
+            weather_data_filtered['TMAX'].fillna(weather_data_filtered['TMAX'].median(), inplace=True)
+            weather_data_filtered['TMIN'].fillna(weather_data_filtered['TMIN'].median(), inplace=True)
+
             # Filter the data between 2015 and 2020
             weather_data_filtered = weather_data[
                 (weather_data['DATE'].dt.year >= 2015) & (weather_data['DATE'].dt.year <= 2020)
             ]
-
-            # Optionally handle nulls here if not already done
-            weather_data_filtered['TMAX'].fillna(weather_data_filtered['TMAX'].median(), inplace=True)
-            weather_data_filtered['TMIN'].fillna(weather_data_filtered['TMIN'].median(), inplace=True)
 
             # Store the transformed data
             self.transformed_data['weather_2015_2020'] = weather_data_filtered
