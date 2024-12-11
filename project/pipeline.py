@@ -179,7 +179,7 @@ if __name__ == "__main__":
     # Initialize services
     extractor = DataExtractor(source_info)
     transformer = DataTransformer(extractor.extracted_data)
-    loader = DataLoader(transformer.transformed_data, 'data/processed_data.db')
+    loader = DataLoader(transformer.transformed_data, 'data/processed_data.db', source_info['data_dir'])
 
     # Run the pipeline
     pipeline = DataPipeline(helper_service, extractor, transformer, loader)
