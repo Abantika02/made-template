@@ -8,6 +8,7 @@
 DB_FILE="data/processed_data.db"
 CSV_SHOOTING_INPUT="data/shootings.csv"
 CSV_WEATHER_INPUT="data/Weather Data (US).csv"
+CSV_WEATHER_FILTERED_INPUT="data/weather_2015_2020.csv" # Filtered input file
 
 # Run the pipeline
 echo "Loading and executing pipeline.py"
@@ -29,6 +30,10 @@ if [ ! -f "$CSV_WEATHER_INPUT" ]; then
     echo "Failed: $CSV_WEATHER_INPUT file does not exist."
     exit 1
 fi
+if [ ! -f "$CSV_WEATHER_FILTERED_INPUT" ]; then
+    echo "Failed: $CSV_WEATHER_FILTERED_INPUT file does not exist."
+    exit 1
+fi
 
 # Check for the existence of the database file
 echo "Final check for database file..."
@@ -42,6 +47,7 @@ fi
 # Validate database tables
 echo "Checking database tables..."
 TABLES=$(sqlite3 "$DB_FILE" ".tables")
+echo "Tables in database: $TABLES"
 
 # Check for shootings table
 if [[ "$TABLES" == *"shootings"* ]]; then
