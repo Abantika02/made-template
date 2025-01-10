@@ -8,12 +8,23 @@ notebook_path = r"C:\Users\bose\Downloads\made-template\project\EDA\analysis.ipy
 with open(notebook_path, "r", encoding="utf-8") as f:
     notebook = nbformat.read(f, as_version=4)
 
-# Mark the notebook as trusted
-notary = NotebookNotary()
-notary.mark_cells(notebook, notebook_path)
+# Add top-level metadata
+notebook['metadata'] = {
+    "kernelspec": {
+        "display_name": "Python 3",
+        "language": "python",
+        "name": "python3"
+    },
+    "language_info": {
+        "name": "python",
+        "version": "3.13.1"
+    },
+    "trusted": True
+}
 
-# Save the notebook
+# Save the updated notebook
 with open(notebook_path, "w", encoding="utf-8") as f:
     nbformat.write(notebook, f)
 
-print(f"{notebook_path} is now trusted.")
+print(f"Metadata added and notebook trusted: {notebook_path}")
+
