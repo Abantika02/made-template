@@ -74,7 +74,7 @@ For dataset preparation, preprocessing, and license compliance, see the `data` f
    ├── README.md                          # Documentation for the project
    ├── requirements.txt                   # List of Python dependencies
    └── .gitignore                         # Rules for files to ignore in version 
-   exit
+   ```
 
 
 ## Repo Details
