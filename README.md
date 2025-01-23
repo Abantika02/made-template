@@ -2,7 +2,7 @@
 
 This repository contains the entire workflow, data, and analyses for exploring patterns in shooting incidents and their correlation with environmental factors and also all exercises in jayvee.
 
-# Project Name: Shooting Incidents Analysis: A Data-Driven Exploration
+# Project Name: Analysis of Shootings Incidents and Weather Data
 
 This project explores the patterns, trends, and environmental factors associated with shooting incidents in the United States. The analysis integrates temporal, spatial, and environmental data, leveraging Python-based pipelines and visualizations to uncover actionable insights.
 
