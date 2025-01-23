@@ -33,7 +33,7 @@ For dataset preparation, preprocessing, and license compliance, see the `data` f
 ---
 
 ## Repository Structure
-
+```bash
 shooting_analysis/
 ├── .github/
 │   └── workflows/
