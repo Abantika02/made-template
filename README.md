@@ -175,7 +175,7 @@ For detailed analysis, see the `analysis-report.pdf` in the `project` folder.
 
 ## License
 
-This project is licensed under the C0-1.0 license. See the `LICENSE` file for details.
+This project is licensed under the CC0-1.0 license. See the `LICENSE` file for details.
 
 
 
