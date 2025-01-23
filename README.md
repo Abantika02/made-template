@@ -33,47 +33,47 @@ For dataset preparation, preprocessing, and license compliance, see the `data` f
 ---
 
 ## Repository Structure
-```bash
-shooting_analysis/
-├── .github/
-│   └── workflows/
-│       ├── ci.yml                     # Continuous Integration workflow
-│       ├── exercise-feedback.yml      # Workflow for automated feedback
-├── data/
-│   └── .gitkeep                       # Placeholder for dataset folder
-├── examples/
-│   ├── data-exploration-example.ipynb # Example notebook for data exploration
-│   ├── final-report-example.ipynb     # Example notebook for report generation
-│   ├── project-plan-example.md        # Example project plan
-│   └── data.sqlite                    # Example SQLite database
-├── exercises/
-│   ├── .gitkeep                       # Placeholder for exercises folder
-│   ├── airports.sqlite                # SQLite database with airport data
-│   ├── country-stats.sqlite           # SQLite database with country statistics
-│   ├── gtfs.sqlite                    # SQLite database with GTFS data
-│   ├── temperatures.sqlite            # SQLite database with temperature data
-│   ├── trees.sqlite                   # SQLite database with tree data
-│   ├── exercise1.jv                   # Java exercise file 1
-│   ├── exercise2.jv                   # Java exercise file 2
-│   ├── exercise3.jv                   # Java exercise file 3
-│   ├── exercise4.jv                   # Java exercise file 4
-│   └── exercise5.jv                   # Java exercise file 5
-├── project/
-│   ├── EDA/
-│   │   ├── analysis.ipynb             # Detailed EDA
-│   ├── pipeline.py                    # Python script for ETL pipeline
-│   ├── pipeline.sh                    # Shell script to execute the ETL pipeline
-│   ├── project-plan.md                # Detailed project plan document
-|   |── data-report.pdf                # Detailed report on the processed datasets.
-|   |── analysis-report.pdf            # Detailed analysis report
-│   ├── source_info.json               # Metadata about data sources
-|   |── slides.pdf                     # Final presentation of this project
-|   |── presentation-video.md          # Contains presentation video link for reference
-│   └── tests.sh                       # Shell script for running tests
-├── LICENSE                            # License information for the project
-├── README.md                          # Documentation for the project
-├── requirements.txt                   # List of Python dependencies
-└── .gitignore                         # Rules for files to ignore in version 
+   ```bash
+   shooting_analysis/
+   ├── .github/
+   │   └── workflows/
+   │       ├── ci.yml                     # Continuous Integration workflow
+   │       ├── exercise-feedback.yml      # Workflow for automated feedback
+   ├── data/
+   │   └── .gitkeep                       # Placeholder for dataset folder
+   ├── examples/
+   │   ├── data-exploration-example.ipynb # Example notebook for data exploration
+   │   ├── final-report-example.ipynb     # Example notebook for report generation
+   │   ├── project-plan-example.md        # Example project plan
+   │   └── data.sqlite                    # Example SQLite database
+   ├── exercises/
+   │   ├── .gitkeep                       # Placeholder for exercises folder
+   │   ├── airports.sqlite                # SQLite database with airport data
+   │   ├── country-stats.sqlite           # SQLite database with country statistics
+   │   ├── gtfs.sqlite                    # SQLite database with GTFS data
+   │   ├── temperatures.sqlite            # SQLite database with temperature data
+   │   ├── trees.sqlite                   # SQLite database with tree data
+   │   ├── exercise1.jv                   # Java exercise file 1
+   │   ├── exercise2.jv                   # Java exercise file 2
+   │   ├── exercise3.jv                   # Java exercise file 3
+   │   ├── exercise4.jv                   # Java exercise file 4
+   │   └── exercise5.jv                   # Java exercise file 5
+   ├── project/
+   │   ├── EDA/
+   │   │   ├── analysis.ipynb             # Detailed EDA
+   │   ├── pipeline.py                    # Python script for ETL pipeline
+   │   ├── pipeline.sh                    # Shell script to execute the ETL pipeline
+   │   ├── project-plan.md                # Detailed project plan document
+   |   |── data-report.pdf                # Detailed report on the processed datasets.
+   |   |── analysis-report.pdf            # Detailed analysis report
+   │   ├── source_info.json               # Metadata about data sources
+   |   |── slides.pdf                     # Final presentation of this project
+   |   |── presentation-video.md          # Contains presentation video link for reference
+   │   └── tests.sh                       # Shell script for running tests
+   ├── LICENSE                            # License information for the project
+   ├── README.md                          # Documentation for the project
+   ├── requirements.txt                   # List of Python dependencies
+   └── .gitignore                         # Rules for files to ignore in version 
 
 
 ## Repo Details
