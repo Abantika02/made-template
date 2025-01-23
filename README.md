@@ -74,6 +74,7 @@ For dataset preparation, preprocessing, and license compliance, see the `data` f
    ├── README.md                          # Documentation for the project
    ├── requirements.txt                   # List of Python dependencies
    └── .gitignore                         # Rules for files to ignore in version 
+   exit
 
 
 ## Repo Details
@@ -127,7 +128,7 @@ For dataset preparation, preprocessing, and license compliance, see the `data` f
    pip install -r requirements.txt
 
 3. Run the pipeline
-   To execute the data ETL pipeline and perform analysis:
+   to execute the data ETL pipeline and perform analysis:
    ```bash 
    python project/pipeline.py
 
