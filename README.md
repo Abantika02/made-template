@@ -21,11 +21,11 @@ This project explores the patterns, trends, and environmental factors associated
 ## Dataset Details
 
 ### Shooting Data
-- **Source:** Public datasets of shooting incidents in the United States.
+- **Source:** Kaggle - Public datasets of shooting incidents in the United States.
 - **Attributes:** Date, time, location, demographics, and more.
 
 ### Weather Data
-- **Source:** Weather Data U.S. [Global Historical Climatology Network (GHCN)].
+- **Source:** Kaggle - Weather Data U.S. [Global Historical Climatology Network (GHCN)].
 - **Attributes:** Temperature, precipitation, and other environmental factors.
 
 For dataset preparation, preprocessing, and license compliance, see the `data` folder and `source_info.json`.
