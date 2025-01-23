@@ -1,6 +1,6 @@
 # Methods of Advanced Data Engineering
 
-This repository contains the entire workflow, data, and analyses for exploring patterns in shooting incidents and their correlation with environmental factors.
+This repository contains the entire workflow, data, and analyses for exploring patterns in shooting incidents and their correlation with environmental factors and also all exercises in jayvee.
 
 # Project Name: Shooting Incidents Analysis: A Data-Driven Exploration
 
