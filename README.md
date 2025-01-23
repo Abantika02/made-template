@@ -136,6 +136,47 @@ For dataset preparation, preprocessing, and license compliance, see the `data` f
    ```bash 
    bash project/pipeline.sh
 
+5. Test the Pipeline
+   Run the provided test suite to ensure the integrity of the pipeline:
+   ```bash
+   bash project/tests.sh
+
+---
+
+## Key Insights
+
+### Temporal Patterns
+- Shooting incidents peak during summer months and weekends.
+
+### Spatial Trends
+- Hotspots include California, Texas, and urban centers like Los Angeles and Houston.
+
+### Environmental Factors
+- Higher temperatures increase shootings, while rainy days show a slight decrease.
+
+For detailed analysis, see the `analysis-report.pdf` in the `project` folder.
+
+---
+
+## Future Work
+
+- **Granular Analysis**: Enhance spatial analysis to explore neighborhood-level trends.
+- **Weather Integration**: Build predictive models leveraging weather patterns.
+- **Policy Recommendations**: Formulate actionable strategies for policymakers.
+
+---
+
+## References
+
+- **Shooting Data**: [Public Dataset Sources](https://www.kaggle.com/datasets/ahsen1330/us-police-shootings)
+- **Weather Data**: [Public Dataset Sources](https://www.kaggle.com/datasets/nachiketkamod/weather-dataset-us)
+
+---
+
+## License
+
+This project is licensed under the C0-1.0 license. See the `LICENSE` file for details.
+
 
 
 
